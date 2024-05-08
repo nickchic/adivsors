@@ -19,7 +19,6 @@ const Withdrawal = (props) => {
                 setComplete(true)
             })
             .catch((e) => {
-                console.log(e)
                 setErrorMessage(e.response.data)
             })
     }

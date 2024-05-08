@@ -14,7 +14,6 @@ const Balance = (props) => {
                 setBalance(res?.data?.amount || 0)
             })
             .catch((e) => {
-                console.log(e)
                 setErrorMessage(e.response.data)
             })
     }, [account_number])
